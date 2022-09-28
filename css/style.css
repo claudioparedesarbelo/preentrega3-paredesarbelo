@@ -1,10 +1,11 @@
 * {
   margin: 0;
   padding: 0;
+
 }
 
 header {
-  background-color: #e3cba6;
+  background-color: #262626;
 }
 
 .main__header {
@@ -15,20 +16,53 @@ header {
   text-align: start;
   line-height: 1.6;
   position: fixed;
-  width: 100vw;
-  height: 150px;
-  display: grid;
-  grid-template-columns: 200px auto;
-  justify-content: space-around;
-  align-items: center;
+  width: 100%;
+  padding: 15px 0 15px 25px;
 }
-.main__header__nav {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  justify-content: end;
-  gap: 0 20px;
+.main__header__logo {
+  display: inline-block;
+  width: 20%;
+}
+.main__header__logo a img {
+  display: inline-block;
+  height: 100px;
+}
+.main__header nav {
+  display: inline-block;
+  width: 70%;
 }
 
+.main__header ul li {
+  display: inline-block;
+  position: relative;
+  background-color: #262626;
+  color: #D9CDB8;
+  font-size: 18px;
+  width: 180px;
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 41px;
+  padding: 10px 15px;
+  margin-left: 20px;
+}
+.main__header ul ul li {
+  display: block;
+}
+.main__header ul li:hover ul {
+  display: block;
+}
+
+.main__header ul ul {
+  display: none;
+  position: absolute;
+  width: 70px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+.main__header ul li a {
+  color: #282f41;
+  text-decoration: none;
+}
 
 .fixed {
   position: fixed;
@@ -49,6 +83,8 @@ header {
   background-repeat: no-repeat;
 }
 .contenidoPrincipaltext {
+  padding-top: 20%;
+  display: inline-block;
   width: 40%;
   height: 60%;
   background-color: rgba(28, 30, 83, 0.42);
@@ -60,17 +96,62 @@ header {
   .quienesSomos {
     background-color: #e3cba6;
   }
-  
+  .quienesSomostext {
+    display: inline-block;
+    width: 70%;
+    padding: 20px 0 30px 30px;
+    text-align: justify;
+    font-size: 1.5em;
+    line-height: 1.5;
+  }
   .comoTrabajamos {
     background-color: #e3cba6;
+  }
+  .comoTrabajamostext {
+    display: inline-block;
+    width: 70%;
+    padding: 20px 0 30px 30px;
+    text-align: justify;
+    font-size: 1.5em;
+    line-height: 1.5;
   }
   .fotos {
     padding: 180px 20px 20px 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
   }
-  
-  
+  .contenedorFotos1 {
+    display: inline-block;
+    width: 45%;
+  }
+  .contenedorFotos1 img {
+    width: 500px;
+    padding-bottom: 40px;
+  }
+  .contenedorFotos2 {
+    display: inline-block;
+    width: 45%;
+  }
+  .contenedorFotos2 img {
+    width: 500px;
+    padding-bottom: 40px;
+  }
+  .contenedorFotosbook1 {
+    display: inline-block;
+    width: 40%;
+  }
+  .contenedorFotosbook1 img{
+    width: 400px;
+    padding-bottom: 40px;
+  }
+  .contenedorFotosbook2 {
+    display: inline-block;
+    width: 40%;
+  }
+  .contenedorFotosbook2 img{
+    width: 400px;
+    padding-bottom: 40px;
+  }
   .videos {
     padding: 50px 60px 50px 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -87,24 +168,54 @@ header {
   .videos h2 {
     padding-bottom: 20px;
   }
-  
-  
- 
-
+  .video1 {
+    display: inline-block;
+    width: 45%;
+    padding-bottom: 30px;
+  }
+  .video2 {
+    display: inline-block;
+    width: 45%;
+  }
+  .formulario {
+    padding: 180px;
+    display: inline-block;
+    width: 65%;
+    font-size: 1.5em;
+    color: #282f41;
+    line-height: 2;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .tarifario {
+    display: inline-block;
+    padding: 170px;
+    font-size: 1.4em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+.footerContacto {
+  display: inline-block;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+}
 footer {
   background-color: #e3cba6;
   padding: 15px 0 15px 25px;
-  
+  display: inline-block;
   width: 100%;
   align-items: center;
   text-align: center;
 }
-
+.footer__logo {
+  width: 10%;
+  display: inline-block;
+}
 .footer__iconos {
-
+  display: inline-block;
   text-decoration: none;
   width: 60%;
-}   
+}
 .footer__iconos a {
   padding: 0 0 0 90px;
 }
