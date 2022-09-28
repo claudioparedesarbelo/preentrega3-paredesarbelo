@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #e3cba6;
+}
+
+.main__header {
+  font-style: normal;
+  font-size: 1.5em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: start;
+  line-height: 1.6;
+  position: fixed;
+  width: 100vw;
+  height: 150px;
+  display: grid;
+  grid-template-columns: 200px auto;
+  justify-content: space-around;
+  align-items: center;
+}
+.main__header__nav {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: end;
+  gap: 0 20px;
+}
+
+
+.fixed {
+  position: fixed;
+  bottom: 90px;
+  right: 40px;
+}
+.fixedaudio {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+}
+.contenidoPrincipal {
+  padding-top: 140px;
+  background-size: cover;
+  background-image: url(../img/IMG_1097.jpg);
+  width: 100vp;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+.contenidoPrincipaltext {
+  width: 40%;
+  height: 60%;
+  background-color: rgba(28, 30, 83, 0.42);
+  color: #e3cba6;
+  text-align: center;
+  font-size: 1.3em;
+  
+  }
+  .quienesSomos {
+    background-color: #e3cba6;
+  }
+  
+  .comoTrabajamos {
+    background-color: #e3cba6;
+  }
+  .fotos {
+    padding: 180px 20px 20px 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+  
+  
+  .videos {
+    padding: 50px 60px 50px 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+  .videosreel {
+    padding: 170px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+  .videosreel h2 {
+    padding-bottom: 20px;
+  }
+  .videos h2 {
+    padding-bottom: 20px;
+  }
+  
+  
+ 
+
+footer {
+  background-color: #e3cba6;
+  padding: 15px 0 15px 25px;
+  
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.footer__iconos {
+
+  text-decoration: none;
+  width: 60%;
+}   
+.footer__iconos a {
+  padding: 0 0 0 90px;
+}
