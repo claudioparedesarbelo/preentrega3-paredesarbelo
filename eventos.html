@@ -5,81 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./img/favicon1.jpg" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./css/style.css" />
     <title>Golden Cinema - Productora Audiovisual</title>
   </head>
   <body>
     <!-- Inicio Header  -->
-    <header class="main__header">
+    <header class="main__header" >
       <p class="main__header__logo">
         <a href="./index.html"
-          ><img src="./img/golden cinema negro.png" alt="logo golden cinema"
+          ><img src="./img/goldencinemablanco1.png" alt="logo golden cinema"
         /></a>
       </p>
       <nav>
         <ul class="main__header__nav">
           <li>
-            <a href="./eventos.html">eventos</a>
+            <a href="./eventos.html">Eventos</a>
           </li>
           <li>
-            <a href="./musica.html">musica</a>
+            <a href="./musica.html">Musica</a>
           </li>
           <li>
-            <a href="#">books</a>
-            <ul>
-              <li>
-                <a href="./fotos.html">fotos</a>
-              </li>
-              <li>
-                <a href="./reels.html">reels</a>
-              </li>
-            </ul>
+            <a href="./fotos.html">Books</a>
           </li>
           <li>
-            <a href="./servicio.html">servicio</a>
+            <a href="./servicio.html">Servicio</a>
           </li>
           <li>
-            <a href="./contacto.html">contacto</a>
+            <a href="./contacto.html">Contacto</a>
           </li>
         </ul>
       </nav>
     </header>
     <!-- Fin Header -->
     <!-- Inicio Fotos -->
+    <div class="contenedor__fotos">
     <section class="fotos">
-      <h2>Fotos Eventos</h2>
-      <div class="contenedorFotos1">
-        <img src="./img/494A3143.jpg" alt="foto pareja preboda" />
-        <img src="./img/494A4022.jpg" alt="foto ramo y zapatos" />
+      <h3 class="textos">Fotos Eventos</h3>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
       </div>
-      <div class="contenedorFotos2">
-        <img src="./img/494A2987.jpg" alt="foto trashthedress" />
-        <img src="./img/494A4034.jpg" alt="foto ramo" />
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/494A3143.jpg" class="d-block w-100" alt="foto pareja preboda">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/494A4022.jpg" class="d-block w-100" alt="foto ramo y zapatos">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/494A2987.jpg" class="d-block w-100" alt="foto trashthedress">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/494A4034.jpg" class="d-block w-100" alt="foto ramos">
+        </div>
       </div>
-    </section>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+</div>
     <!-- Fin Fotos -->
     <!-- Inicio Videos -->
-    <section class="videos">
-      <h2>Videos Eventos</h2>
-      <div class="video1">
+    <h3 class="texto__video">Videos Eventos</h3>
+    <section class="contenedor__videos">
+      
+      <div class="video">
         <iframe
-          width="560"
-          height="315"
           src="https://www.youtube.com/embed/Tx4tAa8-pcM"
           title="YouTube video player"
           frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen
         ></iframe>
       </div>
-      <div class="video2">
+      <div class="video">
         <iframe
-          width="560"
-          height="315"
           src="https://www.youtube.com/embed/ww2gIw3GG7Q"
           title="YouTube video player"
           frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen
         ></iframe>
       </div>
@@ -88,7 +114,7 @@
     <!-- Inicio Footer -->
     <footer class="footer">
       <img
-        src="./img/golden cinema negro.png"
+        src="./img/goldencinemablanco1.png"
         alt="logo empresa"
         class="footer__logo"
       />
