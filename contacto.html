@@ -5,13 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./img/favicon1.jpg" />
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
+    
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
@@ -23,32 +17,77 @@
   </head>
   <body>
     <!-- Inicio Header  -->
+    <!-- Inicio Header  -->
     <header class="main__header">
       <p class="main__header__logo">
-        <a href="./index.html"
+        <a
           ><img src="./img/goldencinemablanco1.png" alt="logo golden cinema"
         /></a>
       </p>
-      <nav>
-        <ul class="main__header__nav">
-          <li>
-            <a href="./eventos.html">Eventos</a>
-          </li>
-          <li>
-            <a href="./musica.html">Musica</a>
-          </li>
-          <li>
-            <a href="./fotos.html">Books</a>
-            </li>
-          <li>
-            <a href="./servicio.html">Servicio</a>
-          </li>
-          <li>
-            <a href="./contacto.html">Contacto</a>
-          </li>
-        </ul>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Home</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./eventos.html"
+                  >Eventos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./musica.html">Musica</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Books
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./fotos.html">Fotos</a></li>
+                  <li><a class="dropdown-item" href="./reels.html">Reels</a></li>
+                </ul>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./servicio.html"
+                    >Servicios</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./contacto.html"
+                    >Contacto</a
+                  >
+                </li>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
+    <!-- Fin Header -->
     <!-- Fin Header -->
     <!-- Inicio Formulario -->
     <section class="formulario">
