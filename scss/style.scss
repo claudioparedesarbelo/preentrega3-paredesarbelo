@@ -1,5 +1,76 @@
+// Paleta de Colores
+$colorfondo: rgba(0, 0, 0, 0.8);
+$colorfondo1: #0f0f0f;
+$colortexto: #fff5dd;
+$colortexto1: #fde3a7;
+$colorboton: #9c4a38;
+$colorboton1: #c4c4c4;
+
+$navbar-light-color: $colortexto1;
+$navbar-light-hover-color: $colortexto;
+$navbar-light-active-color: $colortexto1;
+$navbar-light-disabled-color: $colortexto;
+$dropdown-color: $colortexto1;
+$dropdown-bg: $colorfondo;
+$dropdown-link-color: $colortexto1;
+$dropdown-link-hover-color: $colortexto;
+$dropdown-link-hover-bg: $colorfondo1;
+
 // Include any default variable overrides here (though functions won't be available)
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
+@import "./pages/books";
+@import "./pages/contacto";
+@import "./pages/eventos";
+@import "./pages/fotos";
+@import "./pages/index";
+@import "./pages/musica";
+@import "./pages/reels";
+@import "./pages/servicio";
+@import "./complements/bucles";
+
+.main__header {
+  background: $colorfondo;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.footer {
+  background-color: $colorfondo;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  border-top: 3px solid $colorboton;
+
+  &__iconos a img {
+    padding-left: 15px;
+    width: 45px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 900px) {
+  .main__header {
+    display: grid;
+    grid-template-columns: 200px auto;
+    justify-content: space-around;
+  }
+  .footer {
+    background-color: $colorfondo;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 200px auto;
+    justify-content: space-around;
+    &__iconos a img {
+      width: 80px;
+      height: 60px;
+      padding-left: 20px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.contenedor__fotos1 {
+  border-top: 3px solid $colorboton;
+  &__textos {
+    background-color: $colorfondo1;
+    color: $colortexto1;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    margin-bottom: 0;
+    
+  }
+}
+@media (min-width: 900px) {
+  .contenedor__fotos1 {
+    display: flex;
+    justify-content: center;
+    background-color: $colorfondo1;
+
+    &__textos {
+      padding: 40px;
+      background-color: $colorfondo1;
+    }
+    &__carousel {
+      width: 30%;
+      padding-bottom: 30px;
+    }
+  }
+}

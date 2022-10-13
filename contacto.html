@@ -17,14 +17,13 @@
   </head>
   <body>
     <!-- Inicio Header  -->
-    <!-- Inicio Header  -->
     <header class="main__header">
       <p class="main__header__logo">
-        <a
-          ><img src="./img/goldencinemablanco1.png" alt="logo golden cinema"
+        <a href="./index.html"
+          ><img src="./img/goldencinemaamarillo.png" alt="logo golden cinema"
         /></a>
       </p>
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html">Home</a>
           <button
@@ -42,7 +41,7 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a
-                  class="nav-link active"
+                  class="nav-link"
                   aria-current="page"
                   href="./eventos.html"
                   >Eventos</a
@@ -67,7 +66,7 @@
                 </ul>
                 <li class="nav-item">
                   <a
-                    class="nav-link active"
+                    class="nav-link"
                     aria-current="page"
                     href="./servicio.html"
                     >Servicios</a
@@ -75,7 +74,7 @@
                 </li>
                 <li class="nav-item">
                   <a
-                    class="nav-link active"
+                    class="nav-link"
                     aria-current="page"
                     href="./contacto.html"
                     >Contacto</a
@@ -88,80 +87,81 @@
       </nav>
     </header>
     <!-- Fin Header -->
-    <!-- Fin Header -->
     <!-- Inicio Formulario -->
     <section class="formulario">
-    <div class="container">
-    <form action="" class="col-5">
-      <label for="name">Nombre y Apellido</label>
-      <input type="text" name="name" placeholder="Nombre y Apellido" />
-      <label for="email">Correo Electronico</label>
-      <input type="email" name="email" placeholder="Email" />
-      <label for="password">Contraseña</label>
-      <input type="password" name="password" placeholder="password"/>
-      <label for="message">Deje su mensaje</label>
-      <textarea name="message" cols="30" rows="5"></textarea>
-      <label for="bussines">Pyme</label>
-      <input type="radio" name="bussines" value="pyme" />
-      <label for="bussines">Empresa Grande</label>
-      <input type="radio" name="bussines" value="empresa grande" />
-      <label for="accept">Acepta Terminos y Condiciones</label>
-      <input type="checkbox" name="accept" value="Si" checked />
-      <label for="services">Servicios</label>
-      <select name="services" id="">
-        <option value="web">Web</option>
-        <option value="apps">Apps</option>
-      </select>
-      <input type="submit" value="Enviar Formulario" />
-      <input type="reset" value="Limpiar Formulario" />
-    </form>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Nombre</span>
+      <input type="text" class="form-control" placeholder="Nombre y Apellido" aria-label="Nombre y Apellido" aria-describedby="basic-addon1">
     </div>
-  </section>
+    
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="E-Mail" aria-label="E-Mail" aria-describedby="basic-addon2">
+      <span class="input-group-text" id="basic-addon2">E-Mail</span>
+    </div>
+    
+    <div class="input-group mb-3">
+      <span class="input-group-text"  id="basic-addon3">Direccion</span>
+      <input type="text" class="form-control" placeholder="Direccion"  aria-describedby="basic-addon3">
+    </div>
+    
+    <div class="input-group mb-3">
+      <span class="input-group-text">Celular</span>
+      <input type="text" class="form-control" placeholder="Celular" aria-label="Celular">
+      
+    </div>
+    
+        
+    <div class="input-group">
+      <span class="input-group-text">Consulta</span>
+      <textarea class="form-control" placeholder= "Escriba aqui su consulta" aria-label="Consulta"></textarea>
+    </div>
+    <div class="col-12 mt-4 mb-4" >
+      <button class="btn btn-primary" type="submit">Enviar</button>
+    </div>
+    </section>
     <!-- Fin Formulario -->
     <!-- Inicio Footer -->
     <footer class="footer__contacto">
-      <img
-        src="./img/goldencinemablanco1.png"
+      <a href="./index.html"
+          ><img
+        src="./img/goldencinemaamarillo.png"
         alt="logo empresa"
         class="footer__logo"
-      />
-      <div class="footer__iconos">
+      /></a>
+      <div class="footer__contacto__iconos">
         <a href="https://api.whatsapp.com/send?phone=3413181379" target="_blank"
           ><img
-            src="./img/whatsapp (3).png"
+            src="./img/whatsappaaa.png"
             alt="whatsapp"
-            width="60"
-            height="60"
+            
         /></a>
         <a href="https://www.instagram.com/goldencinema80/" target="_blank"
           ><img
-            src="./img/instagram (4).png"
+            src="./img/instagram.png"
             alt="instagram"
-            width="60"
-            height="60"
+            
         /></a>
         <a
           href="https://www.youtube.com/channel/UC8obibrcBZa2FwGN6J9rJSA"
           target="_blank"
           ><img
-            src="./img/youtube (2).png"
+            src="./img/youtube.png"
             alt="youtube"
-            width="60"
-            height="60"
+            
         /></a>
         <a
           href="https://www.facebook.com/profile.php?id=100080050705008"
           target="_blank"
           ><img
-            src="./img/facebook (5).png"
+            src="./img/facebook.png"
             alt="facebook"
-            width="60"
-            height="60"
+            
         /></a>
         <a href="https://twitter.com/GoldenCinema80" target="_blank"
-          ><img src="./img/gorjeo (1).png" alt="twitter" width="60" height="60"
+          ><img src="./img/twitter.png" alt="twitter" 
         /></a>
-      </div>
+        </div>
+        
     </footer>
     <!-- Fin Footer -->
   </body>
